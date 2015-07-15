@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="segment">
+    <div class="the-content">
+
+
+        <h2 class="ui header">
+            <i class="hide circular icon"></i>
+            <div class="content">
+                لیست اشیای گم‌شده
+                <div class="sub header">نمای کلی از آخرین وقایع و آمار سیستم</div>
+            </div>
+            <div class="ui divider"></div>
+        </h2>
+
+
+        <div class="ui bottom attached active tab stacked segment" data-tab="customer-info">
+            <i class="info icon"></i>
+            برای گرفتن شی گمشده خود به طبقه همکف دانشکده SSC مراجعه کنید
+            توضیحات مربوط به گرفتن شی گمشده
+
+            <div class="ui stackable grid">
+                <div class="five column wide">
+                    <div class="ui  basic segment">
+                        <div class="ui horizontal section divider"><div class="ui label">ثبت شی گم شده</div></div>
+                        <div class="ui form">
+                            <div class="inline field">
+                                <input type="text" id="lost-name" placeholder="نام شی گم شده">
+                            </div>
+                            <div class=" field">
+                                <div class="ui selection dropdown">
+                                    <input type="hidden" name="class">
+                                    <div class="default text">کلاس ۱۰۱</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">کلاس ۱۰۱</div>
+                                        <div class="item" data-value="1">کلاس ۱۰۲</div>
+                                        <div class="item" data-value="2">کلاس ۱۰۳</div>
+                                        <div class="item" data-value="3">کلاس ۲۰۱</div>
+                                        <div class="item" data-value="4">کلاس ۲۰۲</div>
+                                        <div class="item" data-value="5">کلاس ۴۰۱</div>
+                                        <div class="item" data-value="6">کلاس ۷۰۴</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="field">
+                                <!--<input type="file">-->
+                            </div>
+                        </div>
+
+                        <div class="ui right medium labeled icon teal button" id="add-lost">
+                            اضافه کردن
+                            <i class="plus icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="eleven column wide">
+                    <div class="ui basic segment">
+                        <div class="ui horizontal section divider"><div class="ui label"> گزارش‌های اخیر</div></div>
+                        <table class="ui celled structured table" id="lost-table">
+                            <thead>
+                            <tr>
+                                <th rowspan="2">کلاس</th>
+                                <th rowspan="2">شی گم‌شده</th>
+                                <th rowspan="2">تاریخ</th>
+                                <th rowspan="2">عکس</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    کلاس ۱۰۱
+                                </td>
+                                <td>
+                                    <i class="popping item" data-html="&lt;img class='ui image medium' src='{{ staticfiles }}images/3.jpeg'&lt;&gt;">
+                                        سویت‌شرت
+
+                                    </i>
+
+                                </td>
+                                <td>17اردیبهشت 1394 </td>
+                                <td>
+                                    <i class="large green checkmark icon" data-html="&lt;img class='ui image medium' src='{{ staticfiles }}images/3.jpeg'&lt;&gt;"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    کلاس ۱۰۲
+                                </td>
+                                <td>
+                                    <i class="popping item" data-html="&lt;img class='ui image medium' src='images/4.jpg'&lt;&gt;">
+                                        جامدادی
+                                    </i>
+
+                                </td>
+                                <td>۲۹ فروردین 1394 </td>
+                                <td>
+                                    <i class="large green checkmark icon" data-html="&lt;img class='ui image medium' src='images/4.jpg'&lt;&gt;"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    کیف پول
+                                </td>
+                                <td>۳۱ فروردین 1394 </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="popping item" data-html="&lt;img class='ui image medium' src='images/2.jpeg'&lt;&gt;">
+                                        شارژر لپ‌تاپ
+
+                                    </i>
+
+                                </td>
+                                <td>۱۲ اردیبهشت 1394 </td>
+                                <td>
+                                    <i class="large green checkmark icon" data-html="&lt;img class='ui image medium' src='images/2.jpeg'&lt;&gt;"></i>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

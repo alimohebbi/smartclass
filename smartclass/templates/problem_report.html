@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="segment">
+    <div class="the-content">
+        <h2 class="ui header">
+            <i class="pencil circular icon"></i>
+            <div class="content">
+                ثبت مشکلات کلاس‌ها
+                <div class="sub header">
+                    بر اساس کلاس‌ها
+                </div>
+            </div>
+            <div class="ui divider"></div>
+        </h2>
+        <div class="ui top attached  menu" style="z-index: 1000;">
+            <a class="red active item" data-tab="first-floor">
+                طبقه اول
+                    <span class="selected-tab-customer" style="color:#999;">
+
+                    </span>
+            </a>
+            <a class="teal item" data-tab="second-floor">
+                طبقه دوم
+            </a>
+            <a class="purple item" data-tab="forth-floor">
+                طبقه چهارم
+            </a>
+            <a class="blue item" data-tab="seventh-floor">
+                طبقه هفتم
+            </a>
+        </div>
+        <div></div>
+        <div class="ui bottom attached active tab stacked segment active" data-tab="first-floor">
+            <div class="ui stackable grid">
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment" >
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۱۰۱
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment">
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۱۰۲
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment">
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۱۰۳
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ui bottom attached tab stacked segment" data-tab="second-floor">
+            <div class="ui stackable grid">
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment">
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۲۰۱
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment">
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۲۰۲
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment">
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۲۰۴
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ui bottom attached tab stacked segment" data-tab="forth-floor">
+            <div class="ui stackable grid">
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment" >
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۴۰۲
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="ui bottom attached tab stacked segment" data-tab="seventh-floor">
+            <div class="ui stackable grid">
+                <div class="five column wide">
+                    <div class="ui center aligned basic segment">
+                        <div class="ui square segment" >
+                            <a href="class-room.html">
+                                <h2 class="ui header">
+                                    ۷۲۶
+                                    <div class="sub header">کلاس</div>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.link').popup({
+                    position: 'left center'
+                });
+                $('.menu .item').tab({'history': false});
+                ;
+            });
+        </script>
+
+{% endblock %}

@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+    <div class="segment">
+        <div class="the-content">
+
+            <h2 class="ui header">
+                <i class="alarm icon"></i>
+
+                <div class="content"> ردگیری مشکلات
+                    <i class="unhide icon"></i>
+                </div>
+                <div class="ui divider"></div>
+            </h2>
+
+            <div class="ui bottom attached active tab stacked segment" data-tab="customer-info">
+
+                <div class=" ui grid">
+                    <div class=" twelve wide column">
+
+                        <div class="ui orange inverted segment">
+                            <div class="ui segments">
+                                <div class="ui top attached segment">
+                                    <p>شرح مشکل</p>
+                                </div>
+                                <div class="ui  attached segment">
+                                    <p>تاریخ ثبت</p>
+                                </div>
+                                <div class="ui bottom attached segment">
+                                    <p>ثبت شده توسط</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui blue segment">
+                            <div class="ui comments">
+
+                                <div class="ui blue message comment ">
+                                    <a class="avatar">
+                                        <img src="">
+                                    </a>
+                                    <div class="content">
+                                        <span>   از طرف</span>
+                                        <a class="author">اصغر زاده</a>
+                                        <span> واگذار به   </span>
+                                        <a class="author">اصغر زاده</a>
+                                        <div class="metadata">
+                                            <span class="date">امروز 5:42PM</span>
+                                        </div>
+                                        <div class="text" style="color: #000000">
+                                            در حال خرید
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="ui blue message comment ">
+                                    <a class="avatar">
+                                        <img src="">
+                                    </a>
+                                    <div class="content">
+                                        <span>   از طرف</span>
+                                        <a class="author">اصغر زاده</a>
+                                        <span> واگذار به   </span>
+                                        <a class="author">عسگری</a>
+                                        <div class="metadata">
+                                            <span class="date">دو روز پیش</span>
+                                        </div>
+                                        <div class="text" style="color : #000000">
+                                            در حال نصب
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class=" ui message success">
+
+                                    <div>
+                                        <div class="ui category search">
+                                            <span> واگذار به</span>
+                                            <div class="ui icon input">
+                                                <input class="prompt" type="text" placeholder="جستوی کاربر ...">
+                                                <i class="search icon"></i>
+                                            </div>
+
+                                                <div class="results transition visible">
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <form class="ui reply form">
+                                        <div class="field">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div class="ui blue labeled submit icon button">
+                                            <i class="icon edit"></i> افزودن
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+
+
+        var content = [
+            { title: 'Andorra' },
+            { title: 'United Arab Emirates' },
+            { title: 'Afghanistan' },
+            { title: 'Antigua' },
+            { title: 'Anguilla' },
+            { title: 'Albania' },
+            { title: 'Armenia' },
+            { title: 'Netherlands Antilles' },
+            { title: 'Angola' },
+            { title: 'Argentina' },
+            { title: 'American Samoa' },
+            { title: 'Austria' },
+            { title: 'Australia' },
+            { title: 'Aruba' },
+            { title: 'Aland Islands' },
+            { title: 'Azerbaijan' },
+            { title: 'Bosnia' },
+            { title: 'Barbados' },
+            { title: 'Bangladesh' },
+            { title: 'Belgium' },
+            { title: 'Burkina Faso' },
+            { title: 'Bulgaria' },
+            { title: 'Bahrain' },
+            { title: 'Burundi' }
+            // etc
+        ];
+        $('.ui.search')
+                .search({
+                    source: content
+                })
+        ;
+    </script>
+
+{% endblock %}

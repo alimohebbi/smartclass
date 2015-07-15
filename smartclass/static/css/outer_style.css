@@ -1,0 +1,13 @@
+body {
+	direction:rtl;
+	padding:0;
+	margin:0;
+	background:url(../images/bg.jpg);
+	font-family: 'B Yekan';
+}
+
+.container {
+	width:350px;
+	margin:100px auto;
+}
+

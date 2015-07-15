@@ -1,0 +1,398 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="segment">
+
+        <div class="the-content">
+            <h2 class="ui header">
+                <i class="comment circular icon"></i>
+                <div class="content">
+                    فرم نظرخواهي از دانشجويان
+                    <!--<div class="sub header">نماي کلي از آخرين وقايع و آمار سيستم</div>-->
+                </div>
+                <div class="ui divider"></div>
+            </h2>
+
+
+            <div class="ui bottom attached active tab stacked segment" data-tab="customer-info">
+                <i class="archive icon"> </i>
+                اين اطلاعات سه ماه پس از پايان ترم و دريافت نمرات درس توسط اداره آموزش در اختيار استاد قرار خواهد گرفت
+
+                <div class="ui stackable grid">
+                    <div class="five column wide">
+                        <div class="ui  basic segment">
+                            <div class="ui horizontal section divider"><div class="ui label">انتخاب درس و استاد</div></div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui fluid search selection dropdown">
+                                        <input type="hidden" name="courses">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">انتخاب درس</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="HCI">تعامل انسان با رايانه</div>
+                                            <div class="item" data-value="DA">طراحي الگوريتم</div>
+                                            <div class="item" data-value="DB">پايگاه داده</div>
+                                            <div class="item" data-value="DS">ساختار داده</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class=" field">
+                                    <div class="ui selection dropdown">
+                                        <input type="hidden" name="class">
+                                        <div class="default text">انتخاب استاد</div>
+                                        <i class="dropdown icon"></i>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">دکتر نظري</div>
+                                            <div class="item" data-value="1">دکتر آبام</div>
+                                            <div class="item" data-value="2">دکتر جمزاد</div>
+                                            <div class="item" data-value="3">دکتر قدسي</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <!--<input type="file">-->
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>
+                                        نظر دانشجو
+                                    </label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="ui right medium labeled icon teal button" id="add-lost">
+                                ثبت فرم
+                                <i class="plus icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="ui small test modal transition hidden" style="margin-top: -98.5px;">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                فرم نظرسنجي
+                            </div>
+                            <div class="content">
+                                <p>
+                                    نظر شما ثبت شد. با تشکر از همکاري شما
+                                </p>
+                            </div>
+                            <div class="actions">
+
+                                <div class="ui positive button">
+                                    تاييد
+                                    <i class="checkmark icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eleven column wide">
+                        <div class="ui basic segment">
+                            <div class="ui horizontal section divider">
+                                <div class="ui label"> فرم نظرسنجي</div>
+                            </div>
+                            <table class="ui celled structured table" id="lost-table">
+                                <thead>
+                                <tr>
+                                    <th rowspan="2">موضوع</th>
+                                    <th rowspan="2">عالي</th>
+                                    <th rowspan="2">خوب</th>
+                                    <th rowspan="2">متوسط</th>
+                                    <th rowspan="2">بد</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        تسلط استاد به مطالب درس
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="ali1">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="khub1">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="motevaset1">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="bad1">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        قدرت بيان در تفهيم مطالب درسي
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="ali2">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="khub2">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="motevaset2">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="bad2">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        شيوه تدريس و بکارگيري روشهاي مناسب                      </td>
+                                    <td>
+
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="ali3">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="khub3">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="motevaset3">
+                                            <label> </label>
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="bad3">
+                                            <label> </label>
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ارايه برنامه و بيان اهداف کلي درس در شروع درس                      </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="ali4">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="khub4">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="motevaset4">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="bad4">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        رعايت نظم و پيوستگي در ارايه مطلب درس
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="ali5">
+                                            <label> </label>
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="khub5">
+                                            <label> </label>
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="motevaset5">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="bad5">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        تشکيل منظم کلاسها در طول نيمسال بر طبق برنامه آموزشي                      </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        شروع و اتمام منظم و به موقع کلاس در طول نيمسال                      </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        حضور استاد طبق برنامه تعيين شده براي رفع اشکال و مشاوره                      </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="hot-deals">
+                                            <label> </label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.ui.checkbox')
+                    .checkbox()
+            ;
+
+            $('.link').popup({
+                position: 'left center'
+            });
+
+            $('.large.green.checkmark.icon').popup({
+                position: 'left center'
+            });
+
+            $('.popping.item').popup({
+                position: 'left center'
+            });
+
+            $('.ui.dropdown')
+                    .dropdown()
+            ;
+            $("#add-lost").click(function(){
+                $('.small.test.modal')
+                        .modal('show')
+                ;    })
+        });
+
+    </script>
+
+
+
+{% endblock %}
