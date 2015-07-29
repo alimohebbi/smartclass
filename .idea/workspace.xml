@@ -34,7 +34,7 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartclass/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1557" max-vertical-offset="1938">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1938">
               <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="32" />
               <folding />
             </state>
@@ -44,7 +44,7 @@
       <file leaf-file-name="evaluation-merge.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartclass/templates/evaluation-merge.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="4794">
+            <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="4794">
               <caret line="31" column="9" selection-start-line="24" selection-start-column="3" selection-end-line="31" selection-end-column="9" />
               <folding />
             </state>
@@ -74,7 +74,7 @@
       <file leaf-file-name="tracking.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartclass/templates/tracking.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="2686">
+            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2686">
               <caret line="16" column="17" selection-start-line="9" selection-start-column="11" selection-end-line="16" selection-end-column="17" />
               <folding />
             </state>
@@ -84,13 +84,9 @@
       <file leaf-file-name="messaging.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smartclass/templates/messaging.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4015748" vertical-offset="0" max-vertical-offset="1972">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="e#629#650#0#HTML" expanded="true" />
-                <element signature="e#706#745#0#HTML" expanded="true" />
-                <element signature="e#3009#3048#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.41262135" vertical-offset="153" max-vertical-offset="1972">
+              <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,7 +104,7 @@
       <file leaf-file-name="class-room.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartclass/templates/class-room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="9316">
+            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="9316">
               <caret line="24" column="46" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="46" />
               <folding />
             </state>
@@ -162,7 +158,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="32" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -389,7 +385,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Term 10/Web/Peoject/project2/91105863-89107683-project2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
   </component>
@@ -703,11 +699,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2934947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29282576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -715,7 +711,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26916802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2672956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1123,7 +1119,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smartclass/templates/tracking.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="2686">
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2686">
           <caret line="16" column="17" selection-start-line="9" selection-start-column="11" selection-end-line="16" selection-end-column="17" />
           <folding />
         </state>
@@ -1131,13 +1127,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smartclass/templates/messaging.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4015748" vertical-offset="0" max-vertical-offset="1972">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#629#650#0#HTML" expanded="true" />
-            <element signature="e#706#745#0#HTML" expanded="true" />
-            <element signature="e#3009#3048#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.41262135" vertical-offset="153" max-vertical-offset="1972">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
