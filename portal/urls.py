@@ -1,5 +1,6 @@
-from django.conf.urls import include, url
+from django.conf.urls import include, url, static
 from django.contrib import admin
+from portal import settings
 
 
 urlpatterns = [
@@ -23,5 +24,5 @@ urlpatterns = [
     url(r'^tracking/$', 'smartclass.views.tracking_view'),
     url(r'^messaging/$', 'smartclass.views.messaging_view'),
 
-
 ]
+# + static.static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

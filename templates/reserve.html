@@ -1,0 +1,362 @@
+{% extends 'base.html' %}
+{% block content %}
+    <script type="text/javascript" src="static/calendar/lib/jquery.js"></script>
+    <link href="static/calendar/css/persian-datepicker-0.4.5.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="static/calendar/lib/persian-date.js"></script>
+    <script type="text/javascript" src="static/calendar/js/persian-datepicker-0.4.5.min.js"></script>
+
+
+
+
+	
+	
+	<div class="ui small first modal " style="background-color:#00B5AD ">
+	  <i class="close icon"></i>
+	  <div class="header">
+		نام کلاس مورد نظر خود را بنویسید:
+	  </div>
+	  <div class="ui input">
+	    <input type="text" style = "float:right" >
+	  </div>
+	  <div class="actions">
+		<!-- <div class="ui button " style="background-color:white color:black" >
+		  لغو
+		</div> -->
+		<div id="ok" class="ui button " style="background-color:white color:#00B5AD" >
+		  تایید
+		</div>
+	  </div>
+	</div>
+	
+	
+	
+	
+	<div id="full-screen-loader" style="display:none;"><div class="ui inverted active dimmer"><div class="ui text large loader">لطفاً صبر کنید</div></div></div>
+
+	<div class="segment">
+		<div class="the-content">
+
+
+<h2 class="ui header">
+	<i class="calendar circular icon"></i>
+	<div class="content">
+زمان بندی کلاس‌ها
+  			<div class="sub header">نمای کلی از برنامه‌ی کلاس‌ها</div>
+  	</div>
+  	<div class="ui divider"></div>
+</h2>
+
+
+<div class="ui bottom attached active tab stacked segment" data-tab="customer-info">
+	<div class="ui stackable grid">
+		
+		<div class="eleven column wide">
+			<div class="ui basic segment">
+				<div class="ui horizontal section divider"><div class="ui label"> برنامه هفتگی</div></div>
+                <div class="ui search selection dropdown">
+                    <input type="hidden" name="class">
+                    <div class="default text">کلاس‌ها</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+	                  <div class="item" data-value="2">کلاس ۱۰۱</div>
+                      <div class="item" data-value="1">کلاس ۱۰۲</div>
+                      <div class="item" data-value="0">کلاس ۱۰۳</div>
+                    </div>
+                 </div>
+                 
+                <p style="display:inline">  با انتخاب زمان مورد نظر در جدول و وارد کردن نام درس، کلاس را رزرو کنید.</p>
+                <table class="ui celled table" style="margin-top:14px;">
+                  <thead>
+                    <tr>
+                      <th>
+                      روز / ساعت
+                      </th>
+                      <th>
+                          ۷:۳۰-۹
+                      </th>
+                      <th>۹-۱۰:۳۰</th>
+                      <th>۱۰:۳۰-۱۲</th>
+                      <th>۱۳:۳۰-۱۵</th>
+                      <th>۱۵-۱۶:۳۰</th>
+                      <th>۱۶:۳۰-۱۸</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                          شنبه
+                      </td>
+                      <td>شبکه</td>
+                      <td id="1" class="empty">
+
+                      </td>
+                      <td>مهندسی نرم‌افزار</td>
+                      <td>
+                          HCI
+                      </td>
+                      <td id="2"class="empty"></td>
+                      <td>تجارت الکترونیکی</td>
+                    </tr>
+                    <tr>
+                      <td>
+                          یکشنبه
+                      </td>
+                      <td id="3"class="empty"></td>
+                      <td>سیستم عامل</td>
+                      <td>فناوری اطلاعات</td>
+                      <td>برنامه‌نویسی</td>
+                      <td>
+                          الگوریتم
+                      </td>
+                      <td id="4" class="empty"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                          دو‌شنبه
+                      </td>
+                      <td>شبکه</td>
+                      <td>
+وب
+                      </td>
+                        <td>مهندسی نرم‌افزار</td>
+                        <td>
+                          HCI
+                      </td>
+                      <td id="5" class="empty"></td>
+                        <td>تجارت الکترونیکی</td>
+                    </tr>
+                    <tr>
+                      <td>
+                          سه‌شنبه
+                      </td>
+                      <td id="6" class="empty"></td>
+                      <td>سیستم عامل</td>
+                     <td>فناوری اطلاعات</td>
+                    <td>برنامه‌نویسی</td>
+                         <td>
+                          الگوریتم
+                      </td>
+                      <td id="7" class="empty"></td>
+                    </tr>
+                  <tr>
+                      <td>
+چهار‌شنبه
+                      </td>
+                      <td id="8" class="empty"> </td>
+                      <td>وب</td>
+                      <td>حل تمرین</td>
+                      <td id="9" class="empty"></td>
+                      <td>
+                          پایگاه داده
+                      </td>
+                      <td>
+                          پایگاه داده
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+			</div>
+		</div>
+		
+		<div class="five column wide">
+					<div class="ui center aligned basic segment">
+						<h2 class="ui icon ">
+							<div class="content">
+								<div class="ui mini input">
+								  <label id="date"class="ui large labels"> روز</label>
+								</div>
+								<div class="ui horizontal section divider"></div>
+								<div class="ui mini input" style="margin-top: 15px;">
+								  <label id="time"class="ui large labels"> ساعت</label>
+								</div>
+		
+								<div class="ui mini input" style="margin-top: 15px;">
+								  <input type="text" id="course" style="font-size: 20px" placeholder="نام درس">
+								</div>
+		
+						  		<div id="but" class="ui right medium labeled icon teal button " style="margin-top: 20px;" >
+								  رزرو کلاس
+									<i class="plus icon"></i>
+								</div>
+								
+								<div class="ui compact negative message 1">
+								  <p style="font-size: 20px">نام درس را وارد کنید</p>
+								</div>
+								<div class="ui compact positive message 2">
+								  <p style="font-size: 20px">عملیات رزرو با موفقیت انجام شد</p>
+								</div>
+								
+						  	</div>
+						</h2>
+					</div>
+		
+				</div> 
+		
+	</div>
+	
+</div>
+
+
+
+		</div>
+	</div>
+
+
+	<!--<script type="text/javascript" src="static/javascript/jquery-2.1.0.min.js"></script>-->
+	<script type="text/javascript" src="static/semantic-ui/javascript/semantic.min.js"></script>
+	<script type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+
+
+			$(document).ready(function() {
+                 $("#observer").persianDatepicker({
+                    altField: '#observerAlt',
+                    altFormat: "YYYY MM DD HH:mm:ss",
+                    observer: true,
+                    format: 'YYYY/MM/DD'
+
+                });
+                $("#timepicker").persianDatepicker({
+                altField: '#timepickerAltField',
+                altFormat: "YYYY MM DD HH:mm",
+                format: "HH:mm a",
+                onlyTimePicker: true,
+                showSeconds: false,
+                showMeridian: false
+
+
+        });
+            });
+
+
+
+$(document).ready(function(){
+	$('.link').popup({
+		position: 'left center'
+	});
+	$(".message .1").hide();
+	$(".message .2").hide();
+	
+});
+    $('.ui.dropdown')
+ 	 .dropdown();
+  	
+  	
+
+var onetime = false;
+
+
+$( "#but" ).click(function() {
+	if(!$(".chosen").hasClass('done')){
+		onetime = false;
+		var text= $("#course").val();
+		if(text == ""){
+			$(".message1").show().delay(2000).fadeOut();
+		}
+		else{
+			$('.chosen').text(text);
+			$('.chosen').addClass('done');
+			$('.chosen').removeAttr('id');
+			$("#course").val("");
+			$(".message2").show().delay(2000).fadeOut();
+		}
+		$('.chosen').removeClass('chosen');
+
+	}
+});
+
+
+$("#1").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("شنبه");
+	$('#time').text("۹-۱۰.۵");
+	}
+
+})
+$("#2").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("شنبه");
+	$('#time').text("۱۵-۱۶.۵");
+	}
+
+})
+$("#3").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("یکشنبه");
+	$('#time').text("۷.۵-۹");
+	}
+
+})
+$("#4").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("یکشنبه");
+	$('#time').text("۱۶.۵-۱۸");
+	}
+
+})
+$("#5").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("دوشنبه");
+	$('#time').text("۱۵-۱۶.۵");
+	}
+
+})
+$("#6").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("سه‌شنبه");
+	$('#time').text("۷.۵-۹");
+	}
+
+})
+$("#7").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("سه‌شنبه");
+	$('#time').text("۱۶.۵-۱۸");
+	}
+
+})
+$("#8").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("چهارشنبه");
+	$('#time').text("۷.۵-۹");
+	}
+
+})
+$("#9").click(function(){
+	if (!onetime && !$(this).hasClass('done')){
+	$('#date').text("چهارشنبه");
+	$('#time').text("۱۳.۵-۱۵");
+	}
+})
+
+$('.empty').click(function(){
+	if (!onetime){
+		$(this).addClass('chosen');
+		onetime = true;
+	}
+	else{
+		$(this).removeClass('chosen');
+		onetime = false;
+	}
+});
+
+$('.empty').mouseover(function(){
+	if(!($(this).hasClass('done')) && !onetime){
+		$(this).addClass('mouseOver');
+	}
+});
+
+$('.empty').mouseout(function(){
+	if(!$(this).hasClass('done')){
+		$(this).removeClass('mouseOver');
+
+	}
+
+});
+</script>
+{% endblock %}
