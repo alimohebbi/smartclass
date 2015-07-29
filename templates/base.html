@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+   {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "semantic-ui/css/semantic.min.css"%}">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+    <link rel="stylesheet" href="{% static "css/animate.css"%}">
+    <!--<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">-->
+
+
+</head>
+
+    <body>
+    <div id="menubar" class="ui fixed inverted menu">
+        <div class="item">
+            پرتال کلاس هوشمند
+        </div>
+
+        <div class="right item">
+
+            <a href="dashboard.html" style="color:white">
+                <i class="home icon">
+                </i>
+            </a>
+
+        </div>
+        <div class="right item" onclick="location.href = 'about_us.html' ">
+            درباره ما
+        </div>
+        <div class="right item">
+            بهزاد مهرتاش
+        </div>
+    </div>
+
+    <div id="sidebar" class="ui vertical  menu">
+        <a class=" chevron active item" style="margin-top:5px;"> صفحه کلاس
+            <i class="icon fontawesome-book scnd-font-color"></i>
+        </a>
+        <div class="header item">
+            <i class="unlink icon"></i>  لینک‌های سریع
+        </div>
+        <a href="/dashboard" class="item">
+            داشبورد سیستم
+        </a>
+        <a href="/problem_report" class="item">
+            ثبت مشکلات
+        </a>
+        <a href="/reserve" class="item">
+            زمان بندی کلاس‌ها
+        </a>
+        <a href="/lost" class="item">
+            اشیای گمشده
+        </a>
+        <a href="/teacher_poll" class="item">
+            نظرسنجی اساتید
+        </a>
+        <a href="/poll" class="item">
+            نظرسنجی
+        </a>
+        <a href="/evaluation" class="item">
+            ارزیابی
+        </a>
+        <div class="header item">
+            <i class="attachment icon"></i>
+            لینک‌های مرتبط
+        </div>
+        <a class="item" href="">
+            آمار گزارش‌ها
+        </a>
+
+    </div>
+
+    <script type="text/javascript" src="{% static "javascript/jquery-2.1.0.min.js"%}"></script>
+    <script type="text/javascript" src="{% static "semantic-ui/javascript/semantic.min.js"%}"></script>
+    {% block content %}
+
+    {% endblock %}
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.link').popup({
+            position: 'left center'
+        });
+
+        $('.large.green.checkmark.icon').popup({
+            position: 'left center'
+        });
+
+        $('.popping.item').popup({
+            position: 'left center'
+        });
+
+        $('.ui.dropdown')
+                .dropdown()
+        ;
+        $("#add-lost").click(function(){
+            class_name = $('.text').text();
+            issue_name = $('#lost-name').val();
+            $("#lost-table").append("<tr><td>"+class_name+"</td><td>"+issue_name+"</td><td>۳۰ اردیبهشت ۱۳۹۴ </td><td></td></tr")
+        })
+    });
+
+</script>
+
+
+    </body>
+</html>

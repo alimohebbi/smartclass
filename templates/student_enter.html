@@ -1,0 +1,321 @@
+{% extends 'static_links.html' %}
+
+{% block body %}
+
+    {% load staticfiles %}
+
+    <div id="menubar" class="ui fixed inverted menu">
+        <div class="item">
+            پرتال کلاس هوشمند
+        </div>
+
+        <div class="right item" onclick="location.href = 'student_enter.html' ">
+            <i class="home icon"></i>
+        </div>
+        <div class="right item" onclick="location.href = 'about_us.html' ">
+            درباره ما
+        </div>
+        <div class="right item" onclick="location.href = 'teacher_enter.html' ">
+            ورود اساتید و مسولین
+        </div>
+        <!-- <div class="right item"> -->
+        <!-- </div> -->
+    </div>
+
+    <div class="ui inverted vertical segment" style="background-color: #004D40"  >
+        <div class="ui very relaxed stackable page grid" style="margin: 0px;" >
+            <div class="row" >
+                <div class="column">
+
+                </div>
+            </div>
+
+
+            <div class="row" >
+                <div class="ten wide column">
+                    <h1 class="ui inverted header">
+                        سامانه‌ی پرتال کلاس‌های هوشمند
+                    </h1>
+                    <p align="justify" style="font-size:16px" >
+                        طراحی یک پرتال در راستای تسهیل و سرعتبخشی فراهم کردن امکانات مورد نیاز یک کلاس
+                        هوشمند است، اما یک کلاس هوشمند اساسا تا چه حد در یادگیری دانش آموزان تاثیرگذار است؟
+                        <br>
+                        <br>    هدف اصلی این پرتال هوشمند، برقراری نظم و هماهنگی بین اساتید، دانشجویان و کارمندان و همچنین افزایش بازده یادگیری در کلاس های دانشکده کامپیوتر دانشگاه صنعتی شریف است.  </br>
+                        <!-- <br> هر یک از زیربخش های این سیستم به گونه ای طراحی شده است که علاوه بر کمک به افزایش میزان هماهنگی، به حل بخشی از مشکلات دانشکده نیز کمک می کند.</br>
+                         -->              </p>
+
+                    <div class="large basic inverted animated fade ui button">
+                        <div class="visible content">
+                            شروع گزارش
+                        </div>
+                        <div class="hidden content">
+                            <a href="#explain" style="color:white">
+                                ثبت نام
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    <div class="ui form segment">
+                        <h3 class="ui header">
+                            وارد پرتال شو!
+                        </h3>
+                        <p>
+                            با وارد کردن نام کاربری شریف آی دی.
+                        </p>
+                        <div class="field">
+                            <div class="ui left icon action input">
+                                <i class="signup icon"></i>
+                                <input id="login_username" name="email" type="text" placeholder="شناسه شریف مثلا ۹۰۱۱۰۴۲" >
+                                <div  id="login_button" class="ui black submit button" onclick="location.href = 'dashboard.html' " >
+                                    ورود
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui error message"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--<div class="ui inverted masthead segment" style="height: 600px; margin-top: 0px; background-color: #004D40">-->
+    <!--<div class="ui page grid">-->
+    <!--<div class="column">-->
+    <!--<div class="ui transition information" style="padding-top: 100px;">-->
+    <!--<h1 class="ui inverted header">-->
+    <!--سامانه‌ی پرتال کلاس‌های هوشمند-->
+    <!--</h1>-->
+    <!--<p>-->
+    <!--<br>    هدف اصلی این پرتال هوشمند، برقرای نظم و هماهنگی بین اساتید، دانشجویان و کارمندان و همچنین افزایش بازده یادگیری در کلاس های دانشکده کامپیوتر دانشگاه صنعتی شریف است.  </br>-->
+    <!--&lt;!&ndash; <br> هر یک از زیربخش های این سیستم به گونه ای طراحی شده است که علاوه بر کمک به افزایش میزان هماهنگی، به حل بخشی از مشکلات دانشکده نیز کمک می کند.</br>-->
+    <!--&ndash;&gt;              </p>-->
+    <!--<div class="large basic inverted animated fade ui button">-->
+    <!--<div class="visible content">-->
+    <!--شروع گزارش-->
+    <!--</div>-->
+    <!--<div class="hidden content">-->
+    <!--<a href="#loginsite" style="color:white">-->
+    <!--ثبت نام-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="ui vertical feature segment" id="explain">
+        <div class="ui centered page grid">
+            <div class="sixteen wide column">
+                <div class="ui three column center aligned stackable divided grid">
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="hide icon"></i>
+                            اشیای گم شده
+                        </div>
+                        <p >
+                            <br> در این قسمت شما می توانید در صورت یافتن شی گمشده آن را ثبت کنید.
+                            <br> همچنین در صورت گم کردن هر یک از اشیا خود می توانید آن را در لیست اشیا ثبت شده توسط افراد جستجو کنید.</br>
+                        </p>
+                        <p>
+                            <a class="ui button" href="lost.html">
+                                ثبت شی کم شده
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="book icon"></i>
+                            مشکلات کلاس‌ها
+                        </div>
+                        <p>
+                            <br> در این قسمت شما می توانید در صورت مشاهده مشکلی در کلاس های دانشکده، آن را به ثبت برسانید تا افراد از این مشکلات مطلع شوند.</br>
+                        </p>
+                        <p>
+                            <a class="ui blue right labeled icon button" href="problem_report.html">
+                                ثبت مشکل
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="user icon"></i>
+                            رزرو کلاس
+                        </div>
+                        <p>
+                            <br>
+                            زمان‌بندی کلاس‌ها را ببینید و زمان دلخواه خود را رزور کنید.
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            <a class="ui button" href="reserve.html">
+                                رزرو کلاس
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui vertical segment" style="background-color: teal; " >
+        <div class="ui very relaxed stackable page grid" style="margin: 0px;" id="loginsite">
+            <div class="row" >
+                <div class="column">
+                    <h1 class="center aligned ui inverted header">
+                        خلاصه‌ی پرتال
+                    </h1>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="ten wide column">
+                    <h3 class="ui inverted header">
+                        چرا از پرتال استفاده کنیم؟
+                    </h3>
+                    <p align="justify" style="color:white; font-size:16px"  >
+                        <br>  از کاربردهای اصلی این پرتال طرح یک سیستم کارآ و کاربرپسند جهت رفع مشکلات دانشکده کامپیوتر است.</br>
+                        <br> با استفاده از این پرتال می توان با حل مشکلات مشاهده شده در کلاس ها و افزایش میزان هماهنگی های دانشکده ای، به افزایش بازدهی یادگیری در کلاس ها کمک کرد.</br>
+                    </p>
+                    <p align="justify" style="color:white; font-size:16px">
+                        پرتال از ۳ زیربخش اشیا گمشده به منظور کمک کردن به یافتن اشیا گمشده توسط افراد، مشکلات کلاس ها به منظور کمک به ثبت و رفع مشکلات محیط کلاس ها و همچنین رزور کلاس ها
+                        به منظور کمک به هماهنگی ساعت رزرو کلاس های حل تمرین تشکیل شده است.
+                    </p>
+                    <div class="ui basic inverted animated button button">
+                        <div class="visible content">توضیح بیشتر</div>
+                        <div class="hidden content"><i class="right arrow icon"></i></div>
+                    </div>
+                    <div class="ui inverted section divider"></div>
+                    <h3 class="ui inverted header">
+                        نمونه گزارش
+                    </h3>
+                    <div class="ui inverted animated selection list">
+                        <div class="item">
+                            نبود ماژیک قرمز در کلاس ۱۰۳
+                            <div class="right floated">
+                                ۲۹ اردییبهشت
+                            </div>
+                        </div>
+                        <div class="item">
+                            نظافت کلاس ۲۰۲ مناسب نیست.
+                            <div class="right floated">
+                                ۲۳ اردیبهشت
+                            </div>
+                        </div>
+                        <div class="item">
+                            کیف پول پیدا شده در کلاس ۱۰۲
+                            <div class="right floated">
+                                ۱۲ اردیبشهت
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    <div class="ui sticky fixed top" style="margin-bottom: 1px; left: 615.5px; width: 250px; height: 250px; margin-top: 0px;" onclick="$('.green.leaf')
+  .transition('horizontal flip', '500ms')
+  .transition('horizontal flip', 500, function() {
+  });">
+                        <img src="{% static "images/leaf.png" %}" class="ui green leaf image transition visible">
+                    </div>
+                </div>
+                <!-- <div class="ui form segment"> -->
+                <!--<h3 class="ui header">-->
+                <!--وارد پرتال شو!-->
+                <!--</h3>-->
+                <!--<p>-->
+                <!--با وارد کردن نام کاربری شریف آی دی.-->
+                <!--</p>-->
+                <!--<div class="field">-->
+                <!--<div class="ui left icon action input">-->
+                <!--<i class="signup icon"></i>-->
+                <!--<input name="email" type="text" placeholder="شناسه شریف شما">-->
+                <!--<div class="ui black submit button">-->
+                <!--<a href="dashboard.html" style="color:white">ورود-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="ui error message"></div>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="ui inverted footer vertical segment">
+        <div class="ui stackable center aligned page grid">
+            <div class="ten wide column">
+                <div class="ui three column center aligned stackable grid">
+                    <div class="column">
+                        <h5 class="ui inverted header">لینک‌های مرتبط</h5>
+                        <div class="ui inverted link list">
+                            <a class="item">آزمایشگاه تعامل انسان با رایانه</a>
+                            <a href="http://www.ce.sharif.ir" class="item">دانشکده مهندسی کامپیوتر</a>
+                            <a href="http://www.sharif.ir" class="item">دانشگاه صعنعتی شریف</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h5 class="ui inverted header">لینک‌های سریع</h5>
+                        <div class="ui inverted link list">
+                            <a class="item">A-Z</a>
+                            <a class="item">Most Popular</a>
+                            <a class="item">Recently Changed</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h5 class="ui inverted header">دنبال کنید</h5>
+                        <div class="ui inverted link list">
+                            <a class="item">Twitter</a>
+                            <a class="item">Facebook</a>
+                            <a class="item">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h5 class="ui inverted header">ارتباط با ما</h5>
+                <addr>
+                    خیابان آزادی دانشگاه صنعتی شریف
+                    <br>
+                    دانشکده مهندسی کامپیوتر، لابی
+                    <br>
+                </addr>
+                <p>
+                    ۰۹۱۲-۹۹۹۲۲۲۲۲
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.green.leaf')
+                    .transition('horizontal flip', '500ms')
+                    .transition('horizontal flip', 500, function() {
+                    })
+                    .transition('slide up', '500ms')
+                    .transition('slide up', 500, function() {
+                    })
+
+            ;
+            $('.link').popup({
+                position: 'left center'
+            });
+
+            $("#login_username").keyup(function(event){
+                if(event.keyCode == 13){
+                    $("#login_button").click();
+                }
+            });
+
+        });
+    </script>
+{% endblock %}
