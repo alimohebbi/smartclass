@@ -1,28 +1,18 @@
-from django.conf.urls import include, url, static
 from django.contrib import admin
-from portal import settings
+from django.conf.urls import include, url
+from django.views.generic.base import TemplateView
+
+from users import urls as users_urls
+from issues import urls as issues_urls
+from classroom import urls as class_urls
 
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'portal.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
 
+    url(r'^accounts', include(users_urls)),
+    url(r'^issues/', include(issues_urls)),
+    url(r'^classroom/', include(class_urls)),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^about_us/$', 'smartclass.views.about_us'),
-    url(r'^evaluation/$', 'smartclass.views.evaluation'),
-    url(r'^class_room/$', 'smartclass.views.class_view'),
-    url(r'^dashboard/$', 'smartclass.views.dashboard_view'),
-    url(r'^lost/$', 'smartclass.views.lost_view'),
-    url(r'^teacher_poll/$', 'smartclass.views.teacher_poll_view'),
-    url(r'^teacher/$', 'smartclass.views.teacher_poll_view'),
-    url(r'^poll/$', 'smartclass.views.poll_view'),
-    url(r'^problem_report/$', 'smartclass.views.problem_report_view'),
-    url(r'^reserve/$', 'smartclass.views.reserve_view'),
-    url(r'^student_enter/$', 'smartclass.views.student_enter_view'),
-    url(r'^teacher_enter/$', 'smartclass.views.teacher_enter_view'),
-    url(r'^tracking/$', 'smartclass.views.tracking_view'),
-    url(r'^messaging/$', 'smartclass.views.messaging_view'),
+    url(r'^about/$', TemplateView.as_view(template_name='about_us.html')),
 
 ]
-# + static.static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
