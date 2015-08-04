@@ -1,3 +1,9 @@
 .idea/
 db.sqlite3
 *.xml
+users/migrations/
+issues/migrations/
+classroom/migrations/
+classroom/__pycache__
+portal/__pycache__
+issues/__pycache__
