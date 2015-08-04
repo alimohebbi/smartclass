@@ -3,9 +3,9 @@ from classroom.models import Classroom
 
 
 def reserve(request, class_name):
-    classroom = Classroom.objects.get(name=class_name)
+    # classroom = Classroom.objects.get(name=class_name)
     return render(request, 'reserve.html', {
-        'schedule': classroom.schedule
+        'schedule': ''
     })
 
 
